@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+/* INDICACIONES SOBRE COLORES --> FINAL DE LA HOJA DE ESTILOS */
+
+/*INICIO ESTILO PANTALLA GRANDE */
+/*ASPECTOS GENERALES*/
+    body {
+        font-family: Raleway;
+        background-color: rgb(244, 244, 244);
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+    }
+
+    body p {
+        font-size: 28px;
+        line-height: 1.5em;
+    }
+
+    header {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        position: fixed;
+        top: 0;
+    }
+
+    #cajaheader {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    #webname a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    #webname {
+        font-size: 60px;
+        margin: 0 0 20px 0;
+    }
+
+    #lema{
+        margin: 0 0 0 0;
+        font-size: 16px;
+    }
+
+    nav li{
+        list-style:none;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #primarynav li{
+        display:inline;
+        padding: 0 50px 0 0;
+        margin: 0 0 0 0;
+        text-transform: uppercase;
+    }
+
+    #primarynav ul{
+        margin: 0 0 10px -40px;
+    }
+
+    .linav a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .linav a:hover{
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+    }
+
+    .linkactivo a{
+        color: rgb(189, 55, 0);
+    }
+
+    p a{
+        color: rgb(189, 55, 0);
+        text-decoration: none;
+    }
+
+    p a:hover{
+        color: rgb(0, 0, 0);
+    }
+
+    .masinfo a {
+        color: rgb(189, 55, 0);
+        text-decoration: none;
+        border-bottom: 0.5px dotted rgb(189, 55, 0);
+        font-weight: 700;
+    }
+
+    .masinfo a:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-bottom: 0.5px dotted rgb(0, 0, 0);
+        font-weight: 700;
+    }
+
+    h3 a {
+        color: rgb(189, 55, 0);
+        text-decoration: none;
+    }
+
+    h3 a:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+
+    #up-botton {
+        background-color:rgb(0, 0, 0);
+        text-align: right;
+        font-size: 20px;
+        margin: 0 10px 10px 0;
+    }
+
+    #up-botton a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    #up-botton:hover{
+        background-color:rgb(0, 0, 0);
+    }
+
+/*Contenedores con cuerpo 60% PANTALLAS GRANDES */
+    #textoseccion1a, #seccion2a, #seccion3a, #contenidoseccion4a, #seccion5a, #seccion6a, #seccion7a {
+        margin: auto;
+        width: 60%;
+        padding: 10px 10px 0px 10px;
+    }
+/*Fin Contenedores con cuerpo 60% PANTALLAS GRANDES */
+
+/*Footer */
+footer {
+    background-color: rgb(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    padding-top:3%;
+}
+
+#content-footer {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+#footernav li{
+    display:inline;
+    padding: 0 10px 0 0;
+    margin: 0 0 0 0;
+    font-size: 16px;
+}
+
+#footernav li:after { 
+    content: "  \00b7";
+    font-size: 30px; 
+    vertical-align: middle;
+}
+
+#footernav li:last-child:after { 
+    content: none; 
+}
+
+#footernav ul{
+    margin: 0 0 10px -40px;
+}
+
+.lifooter a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.lifooter a:hover{
+    color: rgb(189, 55, 0);
+    text-decoration: none;
+}
+
+.linkactivo a{
+    color: rgb(189, 55, 0);
+}
+
+.rrss:hover{
+    opacity:0.7;
+}
+
+#copyright-icon a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#copyright-icon a:hover{
+    color: rgb(189, 55, 0) !important;
+    text-decoration: none;
+}
+
+#copyright-icon a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 16px;
+}
+/*Final footer*/
+/*FINAL ASPECTOS GENERALES*/
+
+/*HOME*/
+/*SECCIÓN 1A */
+    #seccion1a p{
+        color:rgb(255, 255, 255);
+        font-size: 65px;
+        line-height: 1.5em;
+    }
+
+    #seccion1a {
+        background-image: url("../img/bg-hero-home.jpg");
+        background-repeat: no-repeat; /* Para no repetir la img */
+        background-size: cover; /* Para cubrir la sección con la img */
+        height: 370px;
+        margin-top:180px;
+    }
+/*FINAL SECCIÓN 1A*/
+
+/*SECCIÓN 3A - NOTICIAS*/
+#seccion3a {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 25px;
+}
+#seccion3a img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.noticia {
+    display: block;
+}
+
+.noticia p{
+    font-size: 16px;
+}
+/*FINAL SECCIÓN 3A - NOTICIAS*/
+
+/*SECCIÓN 4A - NEWSLETTER*/
+#seccion4a {
+    background-color: rgb(242, 232, 228);
+    padding-bottom: 50px;
+}
+
+#seccion4a h2{
+    margin-bottom: 0;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    align-items: center;
+    font-size: 9px;
+}
+
+#contenidoseccion4a p {
+    font-size: 9px;
+}
+
+.input {
+    width: 450px;
+    height: 30px;
+    font-family: Raleway;
+    padding-left: 10px;
+}
+
+button {
+    background-color: rgb(189, 55, 0);
+    color:rgb(255, 255, 255);
+    font-family: Raleway;
+    margin-top: 10px;
+    border:none;
+    padding: 15px 25px 15px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+input#consent {
+    vertical-align: middle;
+}
+/*FINAL SECCIÓN 4A - NEWSLETTER*/
+/*Final HOME*/
+
+/*Inicio SINTOMAS*/
+/*SECCIÓN 5A - sintomas*/
+
+#tituloseccion5a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#seccion5a {
+    overflow: auto;
+}
+
+#seccion5a img{
+    object-fit:contain;
+    width: 45%;
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+#seccion5a h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    line-height: 1.5em;
+}
+
+#seccion5a p{
+    font-size: 12px;
+    margin: 0 0 0 0;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.sintomaleft {
+    width: 65%;
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    margin: 30px 0 30px 0;
+    overflow: auto;
+}
+
+.sintomaright {
+    width: 65%;
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+    float:right;
+    overflow: auto;
+}
+
+#seccion5a .masinfo {
+    vertical-align:bottom ;
+}
+
+/*FINAL SECCIÓN 5A - sintomas*/
+
+/*SECCIÓN 6A - VIDEOS*/
+#seccion6a {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 25px;
+    margin-bottom: 100px;
+    margin-top:180px;
+}
+#seccion6a iframe{
+    max-width: 100%;
+    height: 250px;
+}
+
+.video {
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+.video p{
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+/*FINAL SECCIÓN 6A - VIDEOS*/
+
+/*COP26*/
+/*Inicio seccion7A*/
+
+#seccion7a {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 100px;
+    margin-bottom: 100px;
+    margin-top:180px;
+}
+
+#seccion7a p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+#col1 img {
+    max-width: 250px;
+}
+
+#col2 li{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.subtitulocop26 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#col2 {
+    text-align: justify;
+}
+
+blockquote {
+    background-color: white;
+    border-left:rgb(189, 55, 0) solid 5px;
+    padding: 5px 15px 5px 15px;
+    margin:0 0 20px 0;
+    line-height: 1.2em;
+    font-style: italic;
+    text-align: justify;
+}
+/*FINAL COP26*/
+
+/*FINAL ESTILO PANTALLA GRANDE */
+
+/* WEB RESPONSIVE - PANTALLAS PEQUEÑAS*/
+@media screen and (max-width: 1100px) {
+    /*ASPECTOS GENERALES*/
+    body {
+        font-family: Raleway;
+        background-color: rgb(244, 244, 244);
+        margin: 0;
+    }
+    
+    header {
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        background-color: white;
+        margin-bottom: 0;
+    }
+
+    #cajaheader {
+        text-align: center;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 0;
+    }
+
+
+    body p {
+        font-size: 22px;
+    }
+        
+    footer {
+        background-color: rgb(0, 0, 0) ;
+        color: rgb(255, 255, 255);
+    }
+
+    h2{
+        text-align: center;
+        font-size: 25px;
+    }
+        
+    #primarynav li{
+        display:block;
+        padding: 0 0 0 0;
+        margin: 0 0 5px 0;
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    #primarynav li:last-child{
+        margin: 0 0 0 0;
+        padding-bottom: 20px;
+    }
+
+    #primarynav ul{
+        margin: 0 0 0 0;
+    }
+
+    #content-footer {
+        margin: auto;
+        width: 80%;
+    }
+
+/* FOOTER*/
+
+#footernav li{
+    display:block;
+    line-height: 1.2em;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#content-footer p {
+    font-size: 16px;
+}
+
+#footernav li:after { 
+    content: none;
+    font-size: 0px;
+}
+
+#footernav li:last-child:after { 
+    content: none; 
+}
+
+#footernav ul{
+    margin: 0 0 0 0;
+}
+
+#content-footer p {
+    text-align: center;
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+#footernav {
+    text-align: center;
+    max-width: 60%;
+    margin-left: 20%;
+}
+/*Final footer*/
+
+/*Contenedores con cuerpo 100% PANTALLAS PEQUEÑAS */
+#textoseccion1a, #seccion2a, #seccion3a, #contenidoseccion4a, #seccion5a, #seccion6a, #seccion7a {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+/*Fin Contenedores con cuerpo 100% PANTALLAS PEQUEÑAS */
+/*Final ASPECTOS GENERALES*/
+
+/*HOME*/
+/*SECCIÓN 1A */
+    #seccion1a p{
+        color:rgb(255, 255, 255);
+        font-size: 50px;
+        padding-top:10%;
+        margin:0;
+    }
+/*FIN SECCIÓN 1A */
+
+/* SECCION 2A*/
+    #seccion2a {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+/* FIN SECCION 2A */
+
+/*SECCIÓN 3A */
+    #seccion3a {
+        display: block;
+        margin-bottom: 100px;
+    }
+    #seccion3a img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+
+    }
+/*FIN SECCIÓN 3A */
+
+/* SECCIÓN 4A - NEWSLETTER*/
+form {
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    font-size: 9px;
+}
+
+.input {
+    width: 95%;
+    height: 30px;
+    font-family: Raleway;
+    padding-left: 10px;
+}
+
+#contenidoseccion4a {
+    padding-top: 3%;
+}
+/*FIN SECCION 4A - NEWSLETTER */
+/*FIN HOME*/
+
+/*SECCIÓN 5A - sintomas*/
+#tituloseccion5a, #tituloseccion6a, #tituloseccion7a {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#seccion5a {
+    overflow: hidden;
+    margin-top: 0;
+    margin-top:180px;
+}
+
+#seccion5a img{
+    width: 95%;
+    margin: 0 0 0 0;
+    float: none;
+}
+
+#seccion5a h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+    line-height: 1.5em;
+}
+
+#seccion5a p{
+    font-size: 16px;
+    margin: 0 20px 0 0;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.sintomaleft {
+    width: 100%;
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    margin: 30px 0 30px 0;
+    overflow: auto;
+}
+
+.sintomaright {
+    width: 100%;
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+    float:none;
+    overflow: auto;
+}
+
+#seccion5a .masinfo {
+    margin-top:20px;
+}
+/*FINAL SECCIÓN 5A - sintomas*/
+
+/*SECCIÓN 6A - VIDEOS*/
+#seccion6a {
+    display: block;
+    margin-bottom: 100px;
+}
+#seccion6a iframe{
+    max-width: 100%;
+    max-height: 250px;
+    padding: 0;
+}
+
+.video {
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+.video p{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 20px 20px 20px; 
+}
+/*FINAL SECCIÓN 6A - VIDEOS*/
+
+/*COP26*/
+/*Inicio seccion7A*/
+
+#seccion7a {
+    display: block;
+    margin-top:180px;
+}
+
+#seccion7a h3 {
+    font-size: 20px;
+}
+
+#col2 {
+    text-align: left;
+    margin-top: 50px;
+}
+
+#col2 li{
+    margin-bottom: 15px;
+}
+
+blockquote {
+    text-align: left;
+}
+
+/*FINAL COP26*/
+
+
+}
+/* Fin Responsive: mobile first */
+
+
+
+/* INDICACIONES SOBRE COLORES:
+COLORES GENERALES:
+Textos y fondo oscuro: rgb(0, 0, 0) 
+Textos (sobre fondo oscuro): rgb(255, 255, 255)
+Color de contraste: rgb(189, 55, 0)
+Fondo contenidos principales: rgb(244, 244, 244)
+Fondo formulario boletín: rgb(242, 232, 228)
+
+ASPECTO ENLACES
+Menú de navegación principal:
+Color: rgb(0, 0, 0), sin subrayado
+Estado :hover: color rgba(0,0,0,0.5), sin subrayado
+
+Enlace indicativo de página actual: 
+color rgb(189, 55, 0)
+
+Pie de página:
+Color: rgb(255, 255, 255), sin subrayado
+Estado :hover enlaces de texto: rgb(189, 55, 0), sin subrayado
+Estado :hover redes sociales: opacity con valor 0.71
+
+Enlaces dentro del texto:
+Color: rgb(189, 55, 0), sin subrayado
+Estado :hover: rgb(0, 0, 0), con subrayado
+
+Enlaces “leer más” y “+ sobre síntoma x”:
+Color: rgb(189, 55, 0), sin subrayado y con un borde inferior de 1 píxel y de estilo dotted
+Estado :hover: rgb(0, 0, 0)
+
+Enlaces en el titular de las noticias de la página index.html:
+Color: rgb(189, 55, 0), sin subrayado
+Estado :hover: rgb(0, 0, 0), sin subrayado
+
+Formulario de la página index.html:
+Botón de envío: fondo rgb(189, 55, 0), texto rgb(255, 255, 255)
+Estado :hover del botón de envío: fondo rgb(0, 0, 0), texto rgb(255, 255, 255)
+*/
