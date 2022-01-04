@@ -222,7 +222,7 @@ footer p {
     }
 
     #seccion1a {
-        background-image: url("../img/bg-hero-home.jpg");
+        background-image: url("bg-hero-home.jpg");
         background-repeat: no-repeat; /* Para no repetir la img */
         background-size: cover; /* Para cubrir la sección con la img */
         height: 370px;
